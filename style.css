@@ -1,5 +1,51 @@
 body{
     background-color: rgb(233, 233, 233);
+    margin: 0;
+}
+.toplink{
+background-color: rgb(17,17,17);
+overflow: hidden;
+}
+.toplink a{
+    color: azure;
+    text-decoration: none;
+    padding: 14px 16px;
+    display: block;
+    float: left;
+    text-align: left;
+}
+.toplink a:hover{
+    color: rgb(17,17,17);
+    background-color: azure;
+    text-decoration: none;
+}
+.toplink-right{
+    text-align: right;
+}
+.banner{
+background-color: rgb(83.81.78);
+padding: 20px;
+text-align: center;
+}
+.row{
+    content:"";
+    display: block;
+    clear: both;
+}
+.content{
+float: left;
+width: 70%;
+padding: 15px;
+}
+.sidebar{
+float: left;
+width: 30%;
+padding: 15px;
+}
+.footer{
+background-color: rgb(83.81.78);
+padding: 20px;
+text-align: center; 
 }
 h2{    text-align: right; 
     color: rgb(194, 17, 17); 
