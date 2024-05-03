@@ -36,8 +36,9 @@ ul{
     }
 .content{
     float: left;
-    width: 70%;
+    width: 100%;
     padding: 15px;
+    background-color: blue;
     }
 .sidebar{
     float: left;
