@@ -35,7 +35,7 @@ text-align: center;
 float: left;
 width: 100%;
 padding: 15px;
-color: blue;
+background-color: blue;
 }
 .sidebar{
 float: left;
@@ -43,7 +43,7 @@ width: 30%;
 padding: 15px;
 }
 .footer{
-background-color: rgb(83,81,78);
+background-color: white;
 padding: 20px;
 text-align: center; 
 }
