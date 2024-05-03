@@ -1,70 +1,78 @@
 body{
     background-color: rgb(233, 233, 233);
-}
-ul{
-    color: purple;
+    margin: 0;
 }
 .toplink{
-    background-color: rgb(17,17,17);
-    overflow: hidden;
-    }
+background-color: rgb(17,17,17);
+overflow: hidden;
+}
 .toplink a{
-        color: azure;
-        text-decoration: none;
-        padding: 14px 16px;
-        display: block;
-        float: left;
-        text-align: left;
-    }
+    color: azure;
+    text-decoration: none;
+    padding: 14px 16px;
+    display: block;
+    float: left;
+    text-align: left;
+}
 .toplink a:hover{
-        color: rgb(17,17,17);
-        background-color: azure;
-        text-decoration: none;
-    }
+    color: rgb(17,17,17);
+    background-color: azure;
+    text-decoration: none;
+}
 .toplink-right{
-        text-align: right;
-    }
+    text-align: right;
+}
 .banner{
-    background-color:grey;
-    padding: 20px;
-    text-align: center;
-    }
+padding: 20px;
+text-align: center;
+}
 .row{
-        content:"";
-        display: block;
-        clear: both;
-    }
+    content:"";
+    display: block;
+    clear: both;
+}
 .content{
-    float: left;
-    width: 100%;
-    padding: 15px;
-    background-color: blue;
-    }
+float: left;
+width: 100%;
+padding: 15px;
+color: blue;
+}
 .sidebar{
-    float: left;
-    width: 30%;
-    padding: 15px;
-    }
+float: left;
+width: 30%;
+padding: 15px;
+}
 .footer{
-    background-color: grey;
-    padding: 20px;
-    text-align: center; 
-    }
-h1{    text-align: center; 
+background-color: rgb(83,81,78);
+padding: 20px;
+text-align: center; 
+}
+h2{    text-align: right; 
     color: rgb(194, 17, 17); 
     text-decoration: underline; 
     text-transform: uppercase; 
     font-style: italic;
 } 
-h2{    text-align: center; 
-    color: rgb(194, 17, 17); 
-    text-decoration: underline; 
-    text-transform: uppercase; 
-    font-style: italic;
-} 
-h3{    text-align: center; 
-    color: rgb(194, 17, 17); 
-    text-decoration: underline; 
-    text-transform: uppercase; 
-    font-style: italic;
-} 
+table{
+ border:1px solid #373737;
+ border-collapse: collapse;
+ width: 70%;
+}
+td{
+ border:1px solid #373737;
+ padding: 5px;
+ text-align: left;
+}
+th{
+ background-color: rgba(0,0,0,0.9);
+ color: azure;
+ border:1px solid #373737;
+ padding: 5px;
+ text-align: left;
+}
+tr:nth-child(odd){
+ background-color:rgb(136, 136, 239)
+}
+tr:hover{
+ background-color: rgb(11, 11, 167);
+}
