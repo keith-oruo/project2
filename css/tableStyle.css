@@ -1,23 +1,23 @@
 table{
-    border: solid 1px #2b2b2bd0;
-    width: 70%;
+    border: 1px solid  rgb(83, 81, 78);
     border-collapse: collapse;
+    width: 70%;
 }
 td{
-    border: solid 1px #2b2b2bd0;
+    border: 1px solid  rgb(83, 81, 78);
     padding: 5px;
     text-align: left;
 }
 th{
-    background-color: rgba(75, 22, 22, 0.9);
-    color: azure;
-    border: solid 1px #2b2b2bd0;
+    background-color:  rgb(83, 81, 78);
+    color: rgb(233, 233, 233);
+    border: 1px solid  rgb(83, 81, 78);
     padding: 5px;
     text-align: left;
 }
 tr:nth-child(odd){
-    background-color: #2b2b2bd0;
+    background-color: rgb(192, 186, 240);
 }
 tr:hover{
-    background-color: #4b4646d0;
+    background-color: rgb(246, 247, 193);
 }
