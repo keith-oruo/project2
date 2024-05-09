@@ -1,0 +1,26 @@
+body{
+    background-color:azure;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.banner{
+    background-color: #2b2b2bd0;
+    padding: 20px;
+    text-align: center;
+    color: azure;
+}
+
+.row:after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+.footer{
+    background-color: #2b2b2bd0;
+    padding: 20px;
+    text-align: center;
+    color: azure;
+    font-size: 0.8em;
+}

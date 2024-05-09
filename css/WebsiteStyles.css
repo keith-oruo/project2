@@ -1,5 +1,3 @@
-@import url('structureStyle.css');
-@import url('navStyle.css');
-@import url('contentStyle.css');
-@import url('tableStyle.css');
-@import url('formStyle.css');
+@import url('pageStructure');
+@import url('links.css');
+@import url('mainContent.css');
