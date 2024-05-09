@@ -1,0 +1,21 @@
+.toplink{
+    background-color: azure;
+    overflow: hidden;
+}
+.toplink a{
+    color: #2b2b2bd0;
+    text-decoration: none;
+    float: left;
+    display: block;
+    padding: 14px 16px;
+    text-align: left;
+}
+.toplink a:hover{
+    color: azure;
+    background-color:#2b2b2bd0;
+    text-decoration: none;
+}
+
+.toplink-right{
+    float: right;
+}
