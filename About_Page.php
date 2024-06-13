@@ -1,17 +1,4 @@
-<!-- about.html (About Us Page) -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - TechSolutions</title>
-    <div class="toplink">
-        <a href="Home_page.html" >Home</a> | <a href="About_Page.html" >About Us</a> | <a href="Services_Page.html" >Our Services</a> |  <a href="Product_Page.html" >Our Products</a> | <a href="Team_Page.html" >Our Team</a> | <a href="Contact_Page.html" >Contact Us</a> | <a href="Blog_Page.html" >Blog</a>
-    </div>
-    <link rel="stylesheet" href="css/WebsiteStyles.css">
-   
-</head>
-<body>
+<?php include_once("website_templates/links.php"); ?>
     <div class="banner">
         <h1>About Us</h1>
     </div>
@@ -21,36 +8,4 @@
             <p>At TechSolutions, we believe in the power of technology to drive business growth and transformation. Our team of experts combines technical expertise with industry insights to develop customized solutions tailored to meet our clients' unique needs and challenges.</p>
             <p>From software development and IT consulting to cybersecurity and cloud solutions, we offer a comprehensive range of services to help businesses streamline operations, enhance productivity, and achieve their strategic objectives. Our commitment to excellence and customer satisfaction sets us apart as a trusted partner for businesses looking to leverage technology for success.</p>
     </div>
-    <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-    <div class="footer">
-        <p>&copy; 2024 TechSolutions. All rights reserved.</p>
-    </div>
-</body>
-</html>
+    <?php include_once("website_templates/footer.php"); ?>

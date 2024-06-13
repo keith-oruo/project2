@@ -1,16 +1,4 @@
-<!-- blog.html (Blog Page) -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechSolutions - Blog</title>
-    <link rel="stylesheet" href="css/WebsiteStyles.css">
-</head>
-<body style="background-color: #f2f2f2;">
-    <div class="toplink">
-    <a href="Home_page.html" >Home</a> | <a href="About_Page.html" >About Us</a> | <a href="Services_Page.html" >Our Services</a> |  <a href="Product_Page.html" >Our Products</a> | <a href="Team_Page.html" >Our Team</a> | <a href="Contact_Page.html" >Contact Us</a> | <a href="Blog_Page.html" >Blog</a>
-</div>
+<?php include_once("website_templates/links.php"); ?>
     <div class ="banner">
         <h1>TechSolutions Blog</h1>
         
@@ -24,48 +12,4 @@
                 <p>Artificial Intelligence (AI) is transforming the business landscape in unprecedented ways. From automation to predictive analytics, AI technologies offer businesses new opportunities to improve efficiency, streamline operations, and drive innovation. In this article, we explore the future of AI in business and its potential impact across various industries. We discuss key AI trends, emerging applications, and the challenges and opportunities that AI presents for businesses of all sizes. Whether you're a small startup or a large enterprise, understanding the role of AI in the future of business is essential for staying competitive in today's fast-paced digital economy.</p>
             <!-- Add more articles here -->
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-    <div class="footer">
-        <p>&copy; 2024 TechSolutions. All rights reserved.</p>
-    </div>
-</body>
-</html>
+        <?php include_once("website_templates/footer.php"); ?>

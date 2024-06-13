@@ -1,16 +1,4 @@
-<!-- products.html (Our Products Page) -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Products - TechSolutions</title>
-    <link rel="stylesheet" href="css/WebsiteStyles.css">
-</head>
-<body>
-    <div class="toplink">
-    <a href="Home_page.html" >Home</a> | <a href="About_Page.html" >About Us</a> | <a href="Services_Page.html" >Our Services</a> |  <a href="Product_Page.html" >Our Products</a> | <a href="Team_Page.html" >Our Team</a> | <a href="Contact_Page.html" >Contact Us</a> | <a href="Blog_Page.html" >Blog</a>
-    </div>
+<?php include_once("website_templates/links.php"); ?>
     <div class ="banner">
         <h1>Our Products</h1>
     </div>
@@ -29,40 +17,4 @@
             <p style="color: greenyellow;">Our products are designed with the latest technologies and industry best practices to ensure reliability, security, and performance. Contact us to learn more about how our products can benefit your business.</p>
         </section>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    
-    <div class="footer">
-        <p>&copy; 2024 TechSolutions. All rights reserved.</p>
-    </div>
-</body>
-</html>
+    <?php include_once("website_templates/footer.php"); ?>
