@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <title>Welcome - Document</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <?php include_once("Templates/nav.php"); ?>
+<?php include_once("Templates/nav.php"); ?>
+<?php require_once("Templates/nav.php"); ?>
         <div class="banner">
             <h1>Welcome</h1> 
         </div>
