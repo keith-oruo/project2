@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="css/WebsiteStyles.css">
 <?php require_once ("websitedb_connect.php"); 
 include_once("website_templates/links.php"); 
 if(isset($_POST["send_message"])){

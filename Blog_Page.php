@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="css/WebsiteStyles.css">
 <?php require_once ("db_connect.php"); ?>
 <?php include_once("website_templates/links.php"); ?>
     <div class ="banner">
