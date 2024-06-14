@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 13, 2024 at 12:40 PM
+-- Generation Time: Jun 14, 2024 at 11:01 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -18,8 +18,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `voge`
+-- Database: `website database`
 --
+CREATE DATABASE IF NOT EXISTS `website database` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `website database`;
 
 -- --------------------------------------------------------
 
@@ -27,12 +29,15 @@ SET time_zone = "+00:00";
 -- Table structure for table `genders`
 --
 
-CREATE TABLE `genders` (
-  `genderId` tinyint(1) NOT NULL,
+DROP TABLE IF EXISTS `genders`;
+CREATE TABLE IF NOT EXISTS `genders` (
+  `genderId` tinyint(1) NOT NULL AUTO_INCREMENT,
   `gender` varchar(30) DEFAULT NULL,
   `datecreated` datetime DEFAULT current_timestamp(),
-  `dateupdated` datetime DEFAULT current_timestamp() ON UPDATE current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `dateupdated` datetime DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  PRIMARY KEY (`genderId`),
+  UNIQUE KEY `gender` (`gender`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `genders`
@@ -45,15 +50,43 @@ INSERT INTO `genders` (`genderId`, `gender`, `datecreated`, `dateupdated`) VALUE
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `messages`
+--
+
+DROP TABLE IF EXISTS `messages`;
+CREATE TABLE IF NOT EXISTS `messages` (
+  `messageId` bigint(10) NOT NULL AUTO_INCREMENT,
+  `sender_name` varchar(50) DEFAULT NULL,
+  `sender_email` varchar(50) DEFAULT NULL,
+  `subject_line` text DEFAULT NULL,
+  `text_message` text DEFAULT NULL,
+  `datecreated` datetime DEFAULT current_timestamp(),
+  `dateupdated` datetime DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  PRIMARY KEY (`messageId`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `messages`
+--
+
+INSERT INTO `messages` (`messageId`, `sender_name`, `sender_email`, `subject_line`, `text_message`, `datecreated`, `dateupdated`) VALUES
+(3, 'alex', 'alex@yahoo.com', 'Email Support', 'i need help with my email', '2024-06-14 12:00:19', '2024-06-14 12:00:19');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `roles`
 --
 
-CREATE TABLE `roles` (
-  `roleId` tinyint(1) NOT NULL,
+DROP TABLE IF EXISTS `roles`;
+CREATE TABLE IF NOT EXISTS `roles` (
+  `roleId` tinyint(1) NOT NULL AUTO_INCREMENT,
   `role` varchar(30) DEFAULT NULL,
   `datecreated` datetime DEFAULT current_timestamp(),
-  `dateupdated` datetime DEFAULT current_timestamp() ON UPDATE current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `dateupdated` datetime DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  PRIMARY KEY (`roleId`),
+  UNIQUE KEY `role` (`role`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `roles`
@@ -69,8 +102,9 @@ INSERT INTO `roles` (`roleId`, `role`, `datecreated`, `dateupdated`) VALUES
 -- Table structure for table `users`
 --
 
-CREATE TABLE `users` (
-  `userId` bigint(10) NOT NULL,
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE IF NOT EXISTS `users` (
+  `userId` bigint(10) NOT NULL AUTO_INCREMENT,
   `fullname` varchar(50) DEFAULT NULL,
   `email` varchar(50) NOT NULL,
   `username` varchar(50) NOT NULL,
@@ -78,56 +112,11 @@ CREATE TABLE `users` (
   `roleId` tinyint(1) NOT NULL DEFAULT 0,
   `genderId` tinyint(1) NOT NULL DEFAULT 0,
   `datecreated` datetime DEFAULT current_timestamp(),
-  `dateupdated` datetime DEFAULT current_timestamp() ON UPDATE current_timestamp()
+  `dateupdated` datetime DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  PRIMARY KEY (`userId`),
+  UNIQUE KEY `email` (`email`),
+  UNIQUE KEY `username` (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `genders`
---
-ALTER TABLE `genders`
-  ADD PRIMARY KEY (`genderId`),
-  ADD UNIQUE KEY `gender` (`gender`);
-
---
--- Indexes for table `roles`
---
-ALTER TABLE `roles`
-  ADD PRIMARY KEY (`roleId`),
-  ADD UNIQUE KEY `role` (`role`);
-
---
--- Indexes for table `users`
---
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`userId`),
-  ADD UNIQUE KEY `email` (`email`),
-  ADD UNIQUE KEY `username` (`username`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `genders`
---
-ALTER TABLE `genders`
-  MODIFY `genderId` tinyint(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT for table `roles`
---
-ALTER TABLE `roles`
-  MODIFY `roleId` tinyint(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT for table `users`
---
-ALTER TABLE `users`
-  MODIFY `userId` bigint(10) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
