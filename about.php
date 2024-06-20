@@ -14,3 +14,4 @@
                 <?php include_once("Templates/sidebar.php"); ?>
         </div>
  <?php include_once("Templates/footer.php"); ?>
+</div>
