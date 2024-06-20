@@ -3,6 +3,7 @@
             <a href="about.php">About Us</a>
             <a href="projects.php">Our Projects</a>
             <a href="products.php">Our Products</a>
+            <a href="view_messages.php">Messages</a>
             <a href="contacts.php">Contact Us</a>
 
             <div class="toplink-right">
