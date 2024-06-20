@@ -2,13 +2,13 @@
 <?php require_once("Templates/nav.php"); 
 require_once ("db_connect.php");?>
 <link rel="stylesheet" href="css/style.css">
-
+<div class="row">
 <div class="banner">
-            <h1>Messages</h1> 
+            <h1>Update message</h1> 
         </div>
         <div class="row">
         <div class="content">
-            <h1>Messages</h1>
+            <h1>Update message</h1>
                 <table>
                     <thead>
                     <tr>
@@ -16,6 +16,7 @@ require_once ("db_connect.php");?>
                         <th>Sender Email</td>
                         <th>Subject Line</th>
                         <th>Time</th>
+                        <th>Acion</th>
                     </tr>
 </thead>
 <tbody>
@@ -33,7 +34,8 @@ $en++;
 <td><?php print $sel_msg_row["sender_email"]; ?>.</td>
 <td><?php print "<strong>" .$sel_msg_row["subject_line"]. '</strong>-'.  substr($sel_msg_row["text_message"],0 ,20). '...'; ?>.</td>
 <td><?php print date("d-M-Y H:i",strtotime($sel_msg_row["datecreated"])); ?>.</td>
-  </tr>
+<td> <a href =""<?php print $sel_msg_row["messageId"];?>">Edit"</a> ] [Del]
+</tr>
 
 <?php
       
@@ -49,6 +51,7 @@ $en++;
                         <th>Sender Email</td>
                         <th>Subject Line</th>
                         <th>Time</th>
+                        <th>Acion</th>
                     </tr>
 </thead>
                 </table>
