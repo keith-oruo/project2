@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="css/style.css">
+
 <?php
 require_once ("db_connect.php");
 include_once ("templates/nav.php");

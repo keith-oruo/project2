@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="css/style.css">
+
 <?php include_once("Templates/nav.php"); ?>
 <?php require_once("Templates/nav.php"); ?>
         <div class="banner">
