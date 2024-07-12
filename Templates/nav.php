@@ -6,7 +6,7 @@
             <a href="view_messages.php">View message</a>
             <a href="contacts.php">Contact Us</a>
             <div class="toplink-right">
-                <a href="signup.html">Sign Up</a>
-                <a href="signin.html">Sign In</a>
+                <a href="signup.php">Sign Up</a>
+                <a href="signin.php">Sign In</a>
             </div>
         </div>
